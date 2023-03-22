@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl mt-4 text-center">Functional <span class="text-sky-600">Bank!</span></h1>
+    </header>
+    <main>
+        <!-- Balance and Tranjection Summary -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+                <div class="bg-red-500 p-3 rounded-lg">
+                    <h4 class="text-2xl">Deposite</h4>
+                    <h2 class="text-2xl font-medium">$ <span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-sky-500 p-3 rounded-lg">
+                    <h4 class="text-2xl">With Draw</h4>
+                    <h2 class="text-2xl font-medium">$ <span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-green-500 p-3 rounded-lg">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2 class="text-2xl font-medium">$ <span id="balance-total">00</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deposit and Withdraw section  -->
+        <section class="mt-8 w-3/4 mx-auto">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-violet-400 p-8 rounded-lg">
+                    <h3 class="text-4xl mb-3">Your Deposit</h3>
+                    <input class="w-3/4 px-4 py-3 rounded mb-3 block" id ="deposit-field" type="text" placeholder="$ deposit amount">
+                    <button class="bg-blue-400  px-4 py-2 text-white font-semibold display-block rounded-lg hover:bg-green-500" id="btn-deposit">Deposit</button>
+                </div>
+
+                <div class="bg-orange-400 p-8 rounded-lg">
+                    <h3 class="text-4xl mb-3">Your Withdraw </h3>
+                    <input class="w-3/4 px-4 py-3 rounded mb-3 block" type="text" placeholder="$ withdraw amount" id="withdraw-field">
+                    <button class="bg-blue-400  px-4 py-2 text-white font-semibold display-block rounded-lg hover:bg-green-500" id="btn-withdraw">Withdraw</button>
+                 </div>
+        </section>
+
+    </main>
+    <script src="utilities.js"></script>
+    <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
+
+    
+</body>
+</html>
